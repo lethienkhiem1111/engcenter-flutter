@@ -1,0 +1,125 @@
+{
+    "result":"success",
+    "data":[
+       {
+          "tuan":"1",
+          "ngayBatDau":"2020-03-09T11:48:36.721064",
+          "ngayKetThuc":"2020-03-15T11:48:36.721064",
+          "buoi":[
+             {
+                "buoi":"1",
+                "ngay":"2020-03-09T11:48:36.721064",
+                "thu":"Thứ 2",
+                "batDau":"9:00",
+                "ketThuc":"11:00",
+                "phong":"01",
+                "coSo":"1",
+                "giaoVien":"Trần Hoàng Anh",
+                "kyNang":"Reading"
+             },
+             {
+                "buoi":"2",
+                "ngay":"2020-03-11T11:48:36.721064",
+                "thu":"Thứ 4",
+                "batDau":"9:00",
+                "ketThuc":"11:00",
+                "phong":"02",
+                "coSo":"2",
+                "giaoVien":"Nguyễn Thảo Nguyên",
+                "kyNang":"Writting"
+             },
+             {
+                "buoi":"3",
+                "ngay":"2020-03-13T11:48:36.721064",
+                "thu":"Thứ 6",
+                "batDau":"9:00",
+                "ketThuc":"11:00",
+                "phong":"03",
+                "coSo":"02",
+                "giaoVien":"Trần Hoàng Anh",
+                "kyNang":"Listening"
+             }
+          ]
+       },
+       {
+          "tuan":"2",
+          "ngayBatDau":"2020-03-16T11:48:36.721064",
+          "ngayKetThuc":"2020-03-22T11:48:36.721064",
+          "buoi":[
+             {
+                "buoi":"1",
+                "ngay":"2020-03-16T11:48:36.721064",
+                "thu":"Thứ 3",
+                "batDau":"9:00",
+                "ketThuc":"11:00",
+                "phong":"01",
+                "coSo":"01",
+                "giaoVien":"Trần Hoàng Anh",
+                "kyNang":"Reading"
+             },
+             {
+                "buoi":"2",
+                "ngay":"2020-03-18T11:48:36.721064",
+                "thu":"Thứ 5",
+                "batDau":"9:00",
+                "ketThuc":"11:00",
+                "phong":"02",
+                "coSo":"2",
+                "giaoVien":"Nguyễn Thảo Nguyên",
+                "kyNang":"Writting"
+             },
+             {
+                "buoi":"3",
+                "ngay":"2020-03-20T11:48:36.721064",
+                "thu":"Thứ 7",
+                "batDau":"9:00",
+                "ketThuc":"11:00",
+                "phong":"03",
+                "coSo":"02",
+                "giaoVien":"Trần Hoàng Anh",
+                "kyNang":"Listening"
+             }
+          ]
+       },
+       {
+          "tuan":"3",
+          "ngayBatDau":"2020-03-23T11:48:36.721064",
+          "ngayKetThuc":"29/3/2020",
+          "buoi":[
+             {
+                "buoi":"1",
+                "ngay":"2020-03-23T11:48:36.721064",
+                "thu":"Thứ 2",
+                "batDau":"9:00",
+                "ketThuc":"11:00",
+                "phong":"01",
+                "coSo":"01",
+                "giaoVien":"Trần Hoàng Anh",
+                "kyNang":"Reading"
+             },
+             {
+                "buoi":"2",
+                "ngay":"2020-03-25T11:48:36.721064",
+                "thu":"Thứ 4",
+                "batDau":"9:00",
+                "ketThuc":"11:00",
+                "phong":"02",
+                "coSo":"2",
+                "giaoVien":"Nguyễn Thảo Nguyên",
+                "kyNang":"Writting"
+             },
+             {
+                "buoi":"3",
+                "ngay":"2020-03-27T11:48:36.721064",
+                "thu":"Thứ 6",
+                "batDau":"9:00",
+                "ketThuc":"11:00",
+                "phong":"03",
+                "coSo":"02",
+                "giaoVien":"Trần Hoàng Anh",
+                "kyNang":"Listening"
+             }
+          ]
+       }
+    ]
+ }
