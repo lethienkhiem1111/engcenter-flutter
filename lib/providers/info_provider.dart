@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:englcenterapp/config/api.dart';
 import 'package:englcenterapp/helper/cache_interceptor.dart';
 import 'package:englcenterapp/models/info.dart';
 import 'package:rxdart/rxdart.dart';
@@ -7,7 +8,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 class Introduction {
 
   BaseOptions options = BaseOptions(
-    baseUrl: 'https://firstapp-14435.firebaseio.com/introduction',
+    baseUrl: Api.secondUrl,
     receiveTimeout: 5000, 
     connectTimeout: 5000
     );  
@@ -63,15 +64,11 @@ class Introduction {
 
   Future<InfoResponse> getInfo(String segment) async {
     _subject.sink.add(null);
-    final String _endpoint = "https://firstapp-14435.firebaseio.com/introduction/$segment.json";
+    final String _endpoint = Api.secondUrl + "/$segment.json";
     // print('qwcw' + _authToken);
     try {
 
       Response response = await _dio.get('/$segment.json', options: Options(extra: {'segment': segment}));
-      //   print(response);
-      // if(response.statusCode != 200) {
-      //   return InfoResponse.withError(response.data.error);
-      // }
       
       _subject.sink.add(InfoResponse.fromJson(response.data.toString()));
       print(response.data.toString());

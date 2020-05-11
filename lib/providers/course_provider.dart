@@ -1,5 +1,6 @@
 
 import 'package:dio/dio.dart';
+import 'package:englcenterapp/config/api.dart';
 import 'package:englcenterapp/models/course_response.dart';
 import 'package:rxdart/rxdart.dart';
 
@@ -8,7 +9,7 @@ class CourseProvider {
   Dio _dio;
 
   BaseOptions options = BaseOptions(
-    baseUrl: 'http://mekosoft.vn:4088/api/jsonws/vn-mekosoft-giaviet-restapi-portlet.testapi/get-khoa-chieu-sinh/trang-thai-ky-thi-id/4',
+    baseUrl: Api.baseUrl + '/get-khoa-chieu-sinh/trang-thai-ky-thi-id/4',
     connectTimeout: 5000,
     receiveTimeout: 5000
   );

@@ -2,6 +2,7 @@
 
 
 import 'package:dio/dio.dart';
+import 'package:englcenterapp/config/api.dart';
 import 'package:englcenterapp/models/hoso_response.dart';
 import 'package:rxdart/rxdart.dart';
 
@@ -10,8 +11,7 @@ class HosoProvider {
   Dio _dio;
 
   BaseOptions options = BaseOptions(
-    // baseUrl: 'https://firstapp-14435.firebaseio.com/classes.json',
-    baseUrl: 'http://mekosoft.vn:4088/api/jsonws/vn-mekosoft-giaviet-restapi-portlet.testapi/get-ho-so-of-user',
+    baseUrl: Api.baseUrl + '/get-ho-so-of-user',
     connectTimeout: 5000,
     receiveTimeout: 5000
   );
@@ -31,12 +31,6 @@ class HosoProvider {
     _hosos.add(null);
     try {
       final response = await _dio.post('',
-          // headers: {
-          //   "Accept": "application/json, text/javascript, /",
-          //   "accept-language": "en-US,en;q=0.9",
-          //   "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
-          //   "x-requested-with": "XMLHttpRequest"
-          // },
           data:{"sessionKey": sessionKey}, 
          options: Options(contentType:Headers.formUrlEncodedContentType )
       );

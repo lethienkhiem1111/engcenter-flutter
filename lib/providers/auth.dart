@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:englcenterapp/config/api.dart';
 import 'package:flutter/widgets.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
@@ -68,9 +69,7 @@ class Auth with ChangeNotifier {
   }
 
   Future<void> _authenticate(String username, String password, String urlSegment) async {
-    // final url = 'https://identitytoolkit.googleapis.com/v1/accounts:$urlSegment?key=AIzaSyCMhapZ8WQM82VUsvzfC7J83SFGwlvWhgA';
-    // final url = 'http://mekosoft.vn:4088/api/jsonws/vn-mekosoft-giaviet-restapi-portlet.restapi/login';
-    final url = 'http://mekosoft.vn:4088/api/jsonws/vn-mekosoft-giaviet-restapi-portlet.testapi/login';
+    final url = Api.baseUrl + '/login';
     print(username + password);
     try {
       final response = await http.post(
@@ -111,8 +110,7 @@ class Auth with ChangeNotifier {
   }
 
   Future<void> getUserInfo(String sessionKey) async {
-    // final url = 'https://identitytoolkit.googleapis.com/v1/accounts:$urlSegment?key=AIzaSyCMhapZ8WQM82VUsvzfC7J83SFGwlvWhgA';
-    final url = 'http://mekosoft.vn:4088/api/jsonws/vn-mekosoft-giaviet-restapi-portlet.testapi/get-user';
+    final url = Api.baseUrl + '/get-user';
     try {
       final response = await http.post(
         url,
